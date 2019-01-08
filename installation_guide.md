@@ -13,10 +13,6 @@
     pip install -r requirement.txt
     ```
 ## 配置
-* 内容修改
-    + App.py line 30 注释掉
-    + templates/index/honor_wall.html line 30/去掉 resize
-    + initDB.py line 22,23去掉参数
 * 数据库
     ```mysql
     create database cuit_acm (CHARACTER SET =utf8);
@@ -37,8 +33,6 @@
     MAIL_PASSWD="123456"
     ```
 
-* 创建log/web_errors.log
-* 创建static/json/contests.json
 
 ## 数据表备注
 * user 本网站用户
