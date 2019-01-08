@@ -118,7 +118,7 @@ class User(UserMixin, db.Model):
         return check_password_hash(self.password_hash, password)
 
     def gravatar(self, size=100, default='identicon', rating='g'):
-        url = 'http://gravatar.duoshuo.com/avatar'
+        url = 'http://cn.gravatar.com/avatar'
         hash = hashlib.md5(self.name.encode('utf-8')).hexdigest()
         return '{url}/{hash}?s={size}&d={default}&r={rating}'.format(
             url=url, hash=hash, size=size, default=default, rating=rating)

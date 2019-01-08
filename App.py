@@ -27,7 +27,7 @@ def init():
     app.config.from_pyfile('config.py')
     db.init_app(app)
     mail.init_app(app)
-    flask_resize.init_app(app)
+    #flask_resize.init_app(app)
     import logging
     from logging import FileHandler
     from logging import Formatter

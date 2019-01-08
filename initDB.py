@@ -19,6 +19,6 @@ if __name__ == "__main__":
     app.config.from_pyfile('config.py')
     db.init_app(app)
     with app.app_context():
-        db.drop_all(bind=['competitions'])
-        db.create_all(bind=['competitions'])
+        db.drop_all()
+        db.create_all()
 
